@@ -1,0 +1,27 @@
+{
+  "name": "daily-coding-problems",
+  "version": "1.0.0",
+  "description": "Daily Coding Problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnatanbrito/daily-coding-problems.git"
+  },
+  "keywords": [
+    "daily",
+    "coding",
+    "problems"
+  ],
+  "author": "Marcos Pacheco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnatanbrito/daily-coding-problems/issues"
+  },
+  "homepage": "https://github.com/mnatanbrito/daily-coding-problems#readme",
+  "devDependencies": {
+    "ava": "^2.2.0"
+  }
+}
