@@ -4,7 +4,7 @@
   "description": "Daily Coding Problems",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava -v"
   },
   "repository": {
     "type": "git",
