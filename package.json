@@ -1,27 +1,15 @@
 {
   "name": "daily-coding-problems",
-  "version": "1.0.0",
-  "description": "Daily Coding Problems",
-  "main": "index.js",
+  "packageManager": "yarn@4.0.2",
   "scripts": {
-    "test": "ava -v"
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mnatanbrito/daily-coding-problems.git"
+  "dependencies": {
+    "jest": "^29.7.0"
   },
-  "keywords": [
-    "daily",
-    "coding",
-    "problems"
-  ],
-  "author": "Marcos Pacheco",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mnatanbrito/daily-coding-problems/issues"
-  },
-  "homepage": "https://github.com/mnatanbrito/daily-coding-problems#readme",
   "devDependencies": {
-    "ava": "^2.2.0"
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "babel-jest": "^29.7.0"
   }
 }

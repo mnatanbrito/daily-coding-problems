@@ -1,5 +1,3 @@
-import test from 'ava';
-
 /**
  * Good morning! Here's your coding interview problem for today.
  * This problem was recently asked by Google.
@@ -20,21 +18,12 @@ const doesAddUpTo = (arr, k) => {
   return false;
 };
 
-test('Does it add up?', t => {
-  t.true(doesAddUpTo([1, 5, 10, 22, 45, 213], 6), 'Does not add up correctly');
-  t.true(doesAddUpTo([1, 5, 10, 22, 45, 213], 11), 'Does not add up correctly');
-  t.true(doesAddUpTo([1, 5, 10, 22, 45, 213], 23), 'Does not add up correctly');
+test('Does it add up?', () => {
+  expect(doesAddUpTo([1, 5, 10, 22, 45, 213], 6)).toBe(true)
+  expect(doesAddUpTo([1, 5, 10, 22, 45, 213], 11)).toBe(true)
+  expect(doesAddUpTo([1, 5, 10, 22, 45, 213], 23)).toBe(true)
 
-  t.false(
-    doesAddUpTo([1, 5, 10, 22, 45, 213], 13),
-    'Does not add up correctly'
-  );
-  t.false(
-    doesAddUpTo([1, 5, 10, 22, 45, 213], 24),
-    'Does not add up correctly'
-  );
-  t.false(
-    doesAddUpTo([1, 5, 10, 22, 45, 213], 47),
-    'Does not add up correctly'
-  );
+  expect(doesAddUpTo([1, 5, 10, 22, 45, 213], 13)).toBe(false)
+  expect(doesAddUpTo([1, 5, 10, 22, 45, 213], 24)).toBe(false)
+  expect(doesAddUpTo([1, 5, 10, 22, 45, 213], 47)).toBe(false)
 });

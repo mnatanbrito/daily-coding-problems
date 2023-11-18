@@ -1,5 +1,3 @@
-import test from 'ava';
-
 /**
  * This problem was asked by Stripe.
  * Given an array of integers, find the first missing positive integer in linear time and constant space.
@@ -12,7 +10,7 @@ import test from 'ava';
  */
 
 // O(n) and Space(1)
-const findMinimumPositiveInteger = arr => {
+const findMinimumPositiveInteger = (arr) => {
   let n = arr.length;
   let val;
   let nextVal;
@@ -39,10 +37,12 @@ const findMinimumPositiveInteger = arr => {
   return n + 1;
 };
 
-test('Does it find the minimum positive integer correctly?', t => {
-  t.is(findMinimumPositiveInteger([3, 4, -1, 1]), 2);
-  t.is(findMinimumPositiveInteger([2, 2, -2, -6, 7, 8, 0]), 1);
-  t.is(findMinimumPositiveInteger([-21, 9, 4, 1, 6, 2, 0]), 3);
-  t.is(findMinimumPositiveInteger([1, 2, 0]), 3);
-  t.is(findMinimumPositiveInteger([7, -7, 8, 9, -23, 0, 1, 5, 2, -7, 3]), 4);
+test("Does it find the minimum positive integer correctly?", () => {
+  expect(findMinimumPositiveInteger([3, 4, -1, 1])).toBe(2);
+  expect(findMinimumPositiveInteger([2, 2, -2, -6, 7, 8, 0])).toBe(1);
+  expect(findMinimumPositiveInteger([-21, 9, 4, 1, 6, 2, 0])).toBe(3);
+  expect(findMinimumPositiveInteger([1, 2, 0])).toBe(3);
+  expect(
+    findMinimumPositiveInteger([7, -7, 8, 9, -23, 0, 1, 5, 2, -7, 3])
+  ).toBe(4);
 });

@@ -1,5 +1,3 @@
-import test from 'ava';
-
 /**
  * This problem was asked by Google.
  * An XOR linked list is a more memory efficient doubly linked list.
@@ -49,18 +47,18 @@ class LinkedList {
   }
 }
 
-test('Does the XOR linked list works correctly?', t => {
+test("Does the XOR linked list works correctly?", () => {
   const ll = new LinkedList(2);
   ll.add(12);
   ll.add(8);
   ll.add(5);
   ll.add(6);
 
-  t.is(ll.length, 5);
-  t.is(ll.get(1).value, 2);
-  t.is(ll.get(2).value, 12);
-  t.is(ll.get(3).value, 8);
-  t.is(ll.get(4).value, 5);
-  t.is(ll.get(5).value, 6);
-  t.is(ll.get(8), undefined);
+  expect(ll.length).toBe(5);
+  expect(ll.get(1).value).toBe(2);
+  expect(ll.get(2).value).toBe(12);
+  expect(ll.get(3).value).toBe(8);
+  expect(ll.get(4).value).toBe(5);
+  expect(ll.get(5).value).toBe(6);
+  expect(ll.get(8)).toBeUndefined();
 });
